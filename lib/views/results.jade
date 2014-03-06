@@ -1,0 +1,15 @@
+html
+	head
+		title Results
+		link(rel="stylesheet", href="/stylesheets/results.css")
+
+	body
+		for day in dayArray
+			span.dayHeader= day.date
+			br
+			for ev in day.events
+				span.introLine= ev.intro
+				br
+				span.description= ev.description
+				br
+				br
